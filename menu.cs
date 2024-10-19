@@ -24,12 +24,40 @@ namespace GAMERS
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Play nuevoForm = new Play();
+            nuevoForm.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Xbox nuevoForm = new Xbox();
+            nuevoForm.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Nintendo nuevoForm = new Nintendo();
+            nuevoForm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Accesorios nuevoForm = new Accesorios();
+            nuevoForm.Show();
+            this.Hide();
         }
     }
 }
