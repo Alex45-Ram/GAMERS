@@ -15,6 +15,7 @@ namespace GAMERS
         public Accesorios()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,6 +31,11 @@ namespace GAMERS
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Accesorios_Load(object sender, EventArgs e)
         {
 
         }
