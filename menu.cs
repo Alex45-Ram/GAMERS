@@ -15,6 +15,7 @@ namespace GAMERS
         public menu()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -58,6 +59,18 @@ namespace GAMERS
             Accesorios nuevoForm = new Accesorios();
             nuevoForm.Show();
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Accesorios nuevoForm = new Accesorios();
+            nuevoForm.Show();
+            this.Hide();
+        }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

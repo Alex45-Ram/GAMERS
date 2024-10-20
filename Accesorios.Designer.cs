@@ -42,7 +42,7 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Lucida Handwriting", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(12, 536);
+            button1.Location = new Point(-3, 559);
             button1.Name = "button1";
             button1.Size = new Size(216, 61);
             button1.TabIndex = 2;
@@ -57,7 +57,7 @@
             label1.BorderStyle = BorderStyle.FixedSingle;
             label1.Font = new Font("Snap ITC", 19.8000011F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Blue;
-            label1.Location = new Point(427, 9);
+            label1.Location = new Point(663, 9);
             label1.Name = "label1";
             label1.Size = new Size(228, 46);
             label1.TabIndex = 3;
@@ -80,12 +80,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1053, 609);
+            ClientSize = new Size(1240, 617);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "Accesorios";
             Text = "Accesorios";
+            Load += Accesorios_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

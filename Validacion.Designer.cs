@@ -33,10 +33,10 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            Usser = new TextBox();
+            Pass = new TextBox();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            btnValidar = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -87,19 +87,21 @@
             label4.TabIndex = 3;
             label4.Text = "Contraseña:";
             // 
-            // textBox1
+            // Usser
             // 
-            textBox1.Location = new Point(386, 292);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(326, 27);
-            textBox1.TabIndex = 4;
+            Usser.Location = new Point(386, 292);
+            Usser.Name = "Usser";
+            Usser.Size = new Size(326, 27);
+            Usser.TabIndex = 4;
+            Usser.TextChanged += Usser_TextChanged;
             // 
-            // textBox2
+            // Pass
             // 
-            textBox2.Location = new Point(386, 459);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(326, 27);
-            textBox2.TabIndex = 5;
+            Pass.Location = new Point(386, 459);
+            Pass.Name = "Pass";
+            Pass.Size = new Size(326, 27);
+            Pass.TabIndex = 5;
+            Pass.TextChanged += Pass_TextChanged;
             // 
             // pictureBox1
             // 
@@ -111,18 +113,18 @@
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnValidar
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.Cursor = Cursors.Hand;
-            button1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(1068, 552);
-            button1.Name = "button1";
-            button1.Size = new Size(178, 64);
-            button1.TabIndex = 7;
-            button1.Text = "Validar";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnValidar.BackColor = SystemColors.ActiveCaption;
+            btnValidar.Cursor = Cursors.Hand;
+            btnValidar.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnValidar.Location = new Point(1068, 552);
+            btnValidar.Name = "btnValidar";
+            btnValidar.Size = new Size(178, 64);
+            btnValidar.TabIndex = 7;
+            btnValidar.Text = "Validar";
+            btnValidar.UseVisualStyleBackColor = false;
+            btnValidar.Click += button1_Click;
             // 
             // pictureBox2
             // 
@@ -150,15 +152,19 @@
             ClientSize = new Size(1240, 617);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnValidar);
+            Controls.Add(Pass);
+            Controls.Add(Usser);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            MaximizeBox = false;
+            MdiChildrenMinimizedAnchorBottom = false;
+            MinimizeBox = false;
             Name = "Validacion";
+            Load += Validacion_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -172,10 +178,10 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox Usser;
+        private TextBox Pass;
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button btnValidar;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
     }

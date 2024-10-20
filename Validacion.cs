@@ -16,6 +16,7 @@ namespace GAMERS
         public Validacion()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -35,12 +36,44 @@ namespace GAMERS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            menu nuevoForm = new menu();
-            nuevoForm.Show();
-            this.Hide();
+
+            string usuarioValido = "empleado123";
+            string contraseñaValida = "12345";
+
+
+            string usuarioIngresado = Usser.Text;
+            string contraseñaIngresada = Pass.Text;
+
+
+            if (usuarioIngresado == usuarioValido && contraseñaIngresada == contraseñaValida)
+            {
+
+                menu nuevoForm = new menu();
+                nuevoForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Validacion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Usser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pass_TextChanged(object sender, EventArgs e)
         {
 
         }
