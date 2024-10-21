@@ -98,9 +98,9 @@
             // 
             pictureBox3.Cursor = Cursors.Hand;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(268, 167);
+            pictureBox3.Location = new Point(272, 167);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(164, 199);
+            pictureBox3.Size = new Size(160, 199);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
