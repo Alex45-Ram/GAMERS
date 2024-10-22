@@ -36,22 +36,37 @@ namespace GAMERS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int emp = comboBox1.SelectedIndex;
 
-            string usuarioValido = "empleado123";
-            string contraseñaValida = "12345";
+            string contraseñaValida = "caje1";
+            string Contraseñajefe = "jefazo";
 
 
-            string usuarioIngresado = Usser.Text;
+
             string contraseñaIngresada = Pass.Text;
+            string contraseñaBoss = Pass.Text;
 
 
-            if (usuarioIngresado == usuarioValido && contraseñaIngresada == contraseñaValida)
+            if (comboBox1.SelectedIndex == 0 && Pass.Text == contraseñaValida)
             {
 
                 menu nuevoForm = new menu();
                 nuevoForm.Show();
                 this.Hide();
             }
+            else
+
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            if (comboBox1.SelectedIndex == 1 && Pass.Text == contraseñaBoss)
+            {
+                Admin nuevoForm = new Admin();
+                nuevoForm.Show();
+                this.Hide();
+            }
+
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
