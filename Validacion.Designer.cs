@@ -33,12 +33,12 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            Usser = new TextBox();
             Pass = new TextBox();
             pictureBox1 = new PictureBox();
             btnValidar = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            comboBox1 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -86,14 +86,6 @@
             label4.Size = new Size(199, 33);
             label4.TabIndex = 3;
             label4.Text = "Contraseña:";
-            // 
-            // Usser
-            // 
-            Usser.Location = new Point(386, 292);
-            Usser.Name = "Usser";
-            Usser.Size = new Size(326, 27);
-            Usser.TabIndex = 4;
-            Usser.TextChanged += Usser_TextChanged;
             // 
             // Pass
             // 
@@ -145,16 +137,26 @@
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Empleado", "Admi" });
+            comboBox1.Location = new Point(386, 287);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(326, 28);
+            comboBox1.TabIndex = 9;
+            comboBox1.Text = "Seleccione un usuario:";
+            // 
             // Validacion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1240, 617);
+            Controls.Add(comboBox1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(btnValidar);
             Controls.Add(Pass);
-            Controls.Add(Usser);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -178,11 +180,11 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox Usser;
         private TextBox Pass;
         private PictureBox pictureBox1;
         private Button btnValidar;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private ComboBox comboBox1;
     }
 }
