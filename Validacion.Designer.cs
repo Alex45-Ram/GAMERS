@@ -146,6 +146,7 @@
             comboBox1.Size = new Size(326, 28);
             comboBox1.TabIndex = 9;
             comboBox1.Text = "Seleccione un usuario:";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Validacion
             // 

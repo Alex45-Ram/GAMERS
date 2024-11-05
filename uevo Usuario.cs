@@ -10,22 +10,26 @@ using System.Windows.Forms;
 
 namespace GAMERS
 {
-    public partial class Admin : Form
+    public partial class uevo_Usuario : Form
     {
-        public Admin()
+        public uevo_Usuario()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            uevo_Usuario nuevoForm = new uevo_Usuario();
-            nuevoForm.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
