@@ -35,6 +35,7 @@
             button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
@@ -89,7 +90,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(306, 181);
+            pictureBox2.Location = new Point(330, 201);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(612, 404);
             pictureBox2.TabIndex = 6;
@@ -100,15 +101,29 @@
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(-4, -10);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1244, 595);
+            pictureBox3.Size = new Size(1244, 627);
             pictureBox3.TabIndex = 7;
             pictureBox3.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.BlueViolet;
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.Font = new Font("Century", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(571, 87);
+            button2.Name = "button2";
+            button2.Size = new Size(170, 75);
+            button2.TabIndex = 8;
+            button2.Text = "Agregar Usuario";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1240, 617);
+            Controls.Add(button2);
             Controls.Add(pictureBox2);
             Controls.Add(button1);
             Controls.Add(comboBox1);
@@ -131,5 +146,6 @@
         private Button button1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Button button2;
     }
 }

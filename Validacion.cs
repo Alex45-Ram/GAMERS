@@ -36,41 +36,41 @@ namespace GAMERS
 
         private void button1_Click(object sender, EventArgs e)
         {
-                
-                int emp = comboBox1.SelectedIndex;
 
-               
-                string contraseñaValida = "caje1";
-                string contraseñajefe = "jefazo";
+            int emp = comboBox1.SelectedIndex;
 
-            
-                string contraseñaIngresada = Pass.Text;
 
-                
-                if (emp == 0 && contraseñaIngresada == contraseñaValida)
-                {
-                    
-                    menu nuevoForm = new menu();
-                    nuevoForm.Show();
-                    this.Hide();
-                }
-               
-                else if (emp == 1 && contraseñaIngresada == contraseñajefe)
-                {
-                   
-                    Admin nuevoForm = new Admin();
-                    nuevoForm.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    
-                    MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+            string contraseñaValida = "caje1";
+            string contraseñajefe = "jefazo";
+
+
+            string contraseñaIngresada = Pass.Text;
+
+
+            if (emp == 0 && contraseñaIngresada == contraseñaValida)
+            {
+
+                menu nuevoForm = new menu();
+                nuevoForm.Show();
+                this.Hide();
             }
 
+            else if (emp == 1 && contraseñaIngresada == contraseñajefe)
+            {
 
-            private void pictureBox2_Click(object sender, EventArgs e)
+                Admin nuevoForm = new Admin();
+                nuevoForm.Show();
+                this.Hide();
+            }
+            else
+            {
+
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
@@ -86,6 +86,11 @@ namespace GAMERS
         }
 
         private void Pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
