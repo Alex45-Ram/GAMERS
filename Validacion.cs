@@ -94,6 +94,34 @@ namespace GAMERS
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            FormRecuperarContraseña nuevoForm = new FormRecuperarContraseña();
+            nuevoForm.Show();
+            this.Hide();
+        }
+
+
+        private void label5_MouseHover(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Blue;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_MouseEnter(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Blue;
+        }
+
+        private void label5_MouseLeave(object sender, EventArgs e)
+        {
+            label5.ForeColor = Color.Black;
+        }
     }
 }
 
