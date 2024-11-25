@@ -122,6 +122,46 @@ namespace GAMERS
         {
             label5.ForeColor = Color.Black;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            int emp = comboBox1.SelectedIndex;
+
+
+            string contraseñaValida = "caje1";
+            string contraseñajefe = "jefazo";
+
+
+            string contraseñaIngresada = Pass.Text;
+
+
+            if (emp == 0 && contraseñaIngresada == contraseñaValida)
+            {
+
+                menu nuevoForm = new menu();
+                nuevoForm.Show();
+                this.Hide();
+            }
+
+            else if (emp == 1 && contraseñaIngresada == contraseñajefe)
+            {
+
+                Admin nuevoForm = new Admin();
+                nuevoForm.Show();
+                this.Hide();
+            }
+            else
+            {
+
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
 

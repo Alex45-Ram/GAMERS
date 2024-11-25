@@ -16,6 +16,7 @@ namespace GAMERS
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,6 +42,35 @@ namespace GAMERS
         }
 
         private void Xbox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            menu nF = new menu();
+            nF.Show();
+            this.Hide();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Validacion nF = new Validacion();
+            nF.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
