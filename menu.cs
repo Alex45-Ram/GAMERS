@@ -72,5 +72,31 @@ namespace GAMERS
         {
 
         }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            Font font = new Font("Segoe UI", 64, FontStyle.Bold); // Ajusta el tamaño de la fuente
+            Brush brush = new SolidBrush(Color.Black); // Cambia el color según sea necesario
+
+            // Dibuja el texto directamente sobre el PictureBox
+            e.Graphics.DrawString("Consolas", font, brush, new PointF(570, -5));
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Validacion nF = new Validacion();
+            nF.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
