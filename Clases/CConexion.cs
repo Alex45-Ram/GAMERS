@@ -12,26 +12,25 @@ namespace GAMERS.Clases
     {
         public static MySqlConnection conex()
         {
-            string servidor = "server=localhost; database = losputos; Uid=root; pwd=root";
-
+            string servidor = "server=localhost; database=losputos; Uid=root; pwd=root"; // Asegúrate de que estos datos sean correctos
             MySqlConnection conexionbd = new MySqlConnection(servidor);
 
             try
             {
+                conexionbd.Open(); // Intentamos abrir la conexión
+                MessageBox.Show("Conexión exitosa con la base de datos.");
                 return conexionbd;
-                MessageBox.Show("Se logro conectar a la base de datos");
             }
-
             catch (Exception e)
             {
-                MessageBox.Show("No se pudo conectar a la base de datos:" + e.ToString());
-                return null;
+                MessageBox.Show("Error al conectar a la base de datos: " + e.Message);
+                return null;  // Si no se puede conectar, devolvemos null
             }
-
         }
-
-    
     }
+
+
 }
+
     
 

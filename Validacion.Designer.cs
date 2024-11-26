@@ -52,7 +52,7 @@
             label3.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(897, 260);
             label3.Name = "label3";
-            label3.Size = new Size(144, 33);
+            label3.Size = new Size(224, 52);
             label3.TabIndex = 2;
             label3.Text = "Usuario:";
             label3.Click += label3_Click;
@@ -64,7 +64,7 @@
             label4.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(865, 421);
             label4.Name = "label4";
-            label4.Size = new Size(199, 33);
+            label4.Size = new Size(312, 52);
             label4.TabIndex = 3;
             label4.Text = "Contraseña:";
             // 
@@ -72,7 +72,7 @@
             // 
             Pass.Location = new Point(795, 470);
             Pass.Name = "Pass";
-            Pass.Size = new Size(366, 32);
+            Pass.Size = new Size(366, 46);
             Pass.TabIndex = 5;
             Pass.TextChanged += Pass_TextChanged;
             // 
@@ -83,7 +83,7 @@
             comboBox1.Items.AddRange(new object[] { "Empleado", "Admi" });
             comboBox1.Location = new Point(795, 313);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(366, 25);
+            comboBox1.Size = new Size(366, 36);
             comboBox1.TabIndex = 9;
             comboBox1.Text = "Seleccione un usuario:";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
@@ -92,10 +92,10 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Gray;
-            label5.Location = new Point(889, 514);
+            label5.Location = new Point(865, 553);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(155, 20);
+            label5.Size = new Size(249, 31);
             label5.TabIndex = 10;
             label5.Text = "Olvide mi Contraseña";
             label5.Click += label5_Click;
@@ -119,7 +119,7 @@
             label2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(573, 131);
             label2.Name = "label2";
-            label2.Size = new Size(715, 71);
+            label2.Size = new Size(1143, 114);
             label2.TabIndex = 13;
             label2.Text = "¡Bienvenido de nuevo!";
             // 
@@ -167,15 +167,15 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Black;
             label1.Font = new Font("Elephant", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1647, 832);
+            label1.Location = new Point(1593, 834);
             label1.Name = "label1";
-            label1.Size = new Size(89, 26);
+            label1.Size = new Size(143, 41);
             label1.TabIndex = 17;
             label1.Text = "Soporte";
             // 
             // Validacion
             // 
-            AutoScaleDimensions = new SizeF(9F, 20F);
+            AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1802, 876);
