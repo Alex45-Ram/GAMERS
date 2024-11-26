@@ -53,5 +53,12 @@ namespace GAMERS
             nF.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+            Ticket carrito = new Ticket();
+            carrito.Show();
+        }
     }
 }
