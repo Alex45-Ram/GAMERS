@@ -54,7 +54,7 @@ namespace GAMERS
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Validacion nF = new Validacion();
+            Bienvenida nF = new Bienvenida();
             nF.Show();
             this.Hide();
         }

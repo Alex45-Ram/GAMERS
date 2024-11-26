@@ -20,12 +20,17 @@ namespace GAMERS
         private void button1_Click(object sender, EventArgs e)
         {
             Clases.CConexion objetoconexion = new Clases.CConexion();
-          
 
 
-            Validacion nuevoForm = new Validacion();
+
+            Bienvenida nuevoForm = new Bienvenida();
             nuevoForm.Show();
             this.Hide();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }

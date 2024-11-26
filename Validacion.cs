@@ -162,6 +162,18 @@ namespace GAMERS
                 MessageBox.Show("Usuario o contrase�a incorrectos", "Error de autenticaci�n", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Bienvenida nF = new Bienvenida();
+            nF.Show();
+            this.Hide();
+        }
     }
 }
 

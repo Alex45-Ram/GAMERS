@@ -35,6 +35,7 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -78,13 +79,13 @@
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
-            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -98,7 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -162,16 +162,28 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox8);
+            panel1.Controls.Add(pictureBox7);
             panel1.Location = new Point(-2, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1790, 39);
             panel1.TabIndex = 8;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1671, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(49, 35);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 74;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
+            // 
             // pictureBox9
             // 
             pictureBox9.Cursor = Cursors.Hand;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(1703, 1);
+            pictureBox9.Location = new Point(1747, 3);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(40, 35);
             pictureBox9.TabIndex = 11;
@@ -182,7 +194,7 @@
             // 
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(65, 0);
+            pictureBox8.Location = new Point(65, 4);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(40, 35);
             pictureBox8.TabIndex = 10;
@@ -193,7 +205,7 @@
             // 
             pictureBox7.Cursor = Cursors.Hand;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(0, 0);
+            pictureBox7.Location = new Point(3, 4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(40, 35);
             pictureBox7.TabIndex = 9;
@@ -632,24 +644,13 @@
             label30.TabIndex = 48;
             label30.Text = "$$$$$\r\n";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1589, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(49, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 74;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
-            // 
             // Nintendo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1767, 808);
+            ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -690,7 +691,6 @@
             Controls.Add(pictureBox12);
             Controls.Add(pictureBox11);
             Controls.Add(pictureBox10);
-            Controls.Add(pictureBox7);
             Controls.Add(panel1);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox5);
@@ -711,6 +711,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -724,7 +725,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
