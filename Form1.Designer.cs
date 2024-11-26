@@ -33,9 +33,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(129, 131);
+            button1.Location = new Point(79, 82);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(314, 46);
+            button1.Size = new Size(193, 29);
             button1.TabIndex = 0;
             button1.Text = "CONECTAR MYSQL";
             button1.UseVisualStyleBackColor = true;
@@ -43,12 +44,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(609, 313);
+            ClientSize = new Size(375, 196);
             Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 

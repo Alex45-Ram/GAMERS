@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accesorios));
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -78,9 +79,9 @@
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
-            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -98,11 +99,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(890, 132);
             pictureBox2.Margin = new Padding(2);
@@ -121,8 +122,19 @@
             panel1.Controls.Add(pictureBox4);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1705, 39);
+            panel1.Size = new Size(1785, 39);
             panel1.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(1658, 4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(49, 35);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 74;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // pictureBox9
             // 
@@ -139,7 +151,7 @@
             // 
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(1665, 3);
+            pictureBox8.Location = new Point(1742, 3);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(40, 35);
             pictureBox8.TabIndex = 1;
@@ -631,24 +643,13 @@
             label30.TabIndex = 53;
             label30.Text = "$$$$\r\n";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1554, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(49, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 74;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
-            // 
             // Accesorios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1728, 740);
+            ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -701,6 +702,7 @@
             Load += Accesorios_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -718,7 +720,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

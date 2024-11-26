@@ -138,8 +138,9 @@
             // 
             // pictureBox6
             // 
+            pictureBox6.Cursor = Cursors.Hand;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1680, 1);
+            pictureBox6.Location = new Point(1661, 0);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(49, 35);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -162,7 +163,7 @@
             // 
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(1759, 4);
+            pictureBox8.Location = new Point(1744, 1);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(40, 35);
             pictureBox8.TabIndex = 10;
@@ -472,11 +473,11 @@
             // 
             label13.AutoSize = true;
             label13.BackColor = Color.Transparent;
-            label13.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label13.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
             label13.Location = new Point(886, 1187);
             label13.Name = "label13";
-            label13.Size = new Size(125, 25);
+            label13.Size = new Size(113, 22);
             label13.TabIndex = 56;
             label13.Text = "Resident Evil 4";
             // 
@@ -484,11 +485,11 @@
             // 
             label14.AutoSize = true;
             label14.BackColor = Color.Transparent;
-            label14.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label14.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
             label14.Location = new Point(1186, 1187);
             label14.Name = "label14";
-            label14.Size = new Size(86, 25);
+            label14.Size = new Size(111, 21);
             label14.TabIndex = 57;
             label14.Text = "Hellblade";
             // 
@@ -570,6 +571,7 @@
             label21.AutoSize = true;
             label21.BackColor = Color.Transparent;
             label21.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label21.ForeColor = SystemColors.Control;
             label21.Location = new Point(317, 794);
             label21.Name = "label21";
             label21.Size = new Size(52, 25);
@@ -664,11 +666,11 @@
             // 
             label29.AutoSize = true;
             label29.BackColor = Color.Transparent;
-            label29.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label29.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label29.ForeColor = Color.White;
             label29.Location = new Point(909, 1222);
             label29.Name = "label29";
-            label29.Size = new Size(52, 25);
+            label29.Size = new Size(50, 21);
             label29.TabIndex = 71;
             label29.Text = "$$$$";
             // 
