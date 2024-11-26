@@ -75,10 +75,10 @@ namespace GAMERS
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
-            Font font = new Font("Segoe UI", 64, FontStyle.Bold); 
-            Brush brush = new SolidBrush(Color.Black); 
+            Font font = new Font("Segoe UI", 64, FontStyle.Bold);
+            Brush brush = new SolidBrush(Color.Black);
 
-          
+
             e.Graphics.DrawString("Consolas", font, brush, new PointF(570, -5));
         }
 
@@ -97,6 +97,12 @@ namespace GAMERS
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Ticket carrito = new Ticket();
+            carrito.Show();
         }
     }
 }
