@@ -40,14 +40,14 @@ namespace GAMERS
             int emp = comboBox1.SelectedIndex;
 
 
-            string contraseñaValida = "caje1";
-            string contraseñajefe = "jefazo";
+            string contraseÃ±aValida = "caje1";
+            string contraseÃ±ajefe = "jefazo";
 
 
-            string contraseñaIngresada = Pass.Text;
+            string contraseÃ±aIngresada = Pass.Text;
 
 
-            if (emp == 0 && contraseñaIngresada == contraseñaValida)
+            if (emp == 0 && contraseÃ±aIngresada == contraseÃ±aValida)
             {
 
                 menu nuevoForm = new menu();
@@ -55,7 +55,7 @@ namespace GAMERS
                 this.Hide();
             }
 
-            else if (emp == 1 && contraseñaIngresada == contraseñajefe)
+            else if (emp == 1 && contraseÃ±aIngresada == contraseÃ±ajefe)
             {
 
                 Admin nuevoForm = new Admin();
@@ -65,7 +65,7 @@ namespace GAMERS
             else
             {
 
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseï¿½a incorrectos", "Error de autenticaciï¿½n", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -97,7 +97,7 @@ namespace GAMERS
 
         private void label5_Click(object sender, EventArgs e)
         {
-            FormRecuperarContraseña nuevoForm = new FormRecuperarContraseña();
+            FormRecuperarContraseÃ±a nuevoForm = new FormRecuperarContraseÃ±a();
             nuevoForm.Show();
             this.Hide();
         }
@@ -134,14 +134,14 @@ namespace GAMERS
             int emp = comboBox1.SelectedIndex;
 
 
-            string contraseñaValida = "caje1";
-            string contraseñajefe = "jefazo";
+            string contraseÃ±aValida = "caje1";
+            string contraseÃ±ajefe = "jefazo";
 
 
-            string contraseñaIngresada = Pass.Text;
+            string contraseÃ±aIngresada = Pass.Text;
 
 
-            if (emp == 0 && contraseñaIngresada == contraseñaValida)
+            if (emp == 0 && contraseÃ±aIngresada == contraseÃ±aValida)
             {
 
                 menu nuevoForm = new menu();
@@ -149,7 +149,7 @@ namespace GAMERS
                 this.Hide();
             }
 
-            else if (emp == 1 && contraseñaIngresada == contraseñajefe)
+            else if (emp == 1 && contraseÃ±aIngresada == contraseÃ±ajefe)
             {
 
                 Admin nuevoForm = new Admin();
@@ -159,7 +159,7 @@ namespace GAMERS
             else
             {
 
-                MessageBox.Show("Usuario o contraseña incorrectos", "Error de autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseï¿½a incorrectos", "Error de autenticaciï¿½n", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
