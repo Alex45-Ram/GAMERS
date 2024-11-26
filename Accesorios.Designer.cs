@@ -202,7 +202,7 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.BackColor = Color.LightSalmon;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(302, 132);
             pictureBox7.Margin = new Padding(2);
@@ -648,7 +648,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.LightSalmon;
             ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);

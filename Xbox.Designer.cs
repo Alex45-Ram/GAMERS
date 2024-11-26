@@ -105,7 +105,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackColor = Color.ForestGreen;
             pictureBox1.Location = new Point(3, -52);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1802, 1346);
@@ -115,7 +115,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackColor = Color.ForestGreen;
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(557, 95);
@@ -276,7 +276,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
+            label2.BackColor = Color.ForestGreen;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
             label2.Location = new Point(294, 321);
@@ -288,7 +288,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
+            label1.BackColor = Color.ForestGreen;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.Control;
             label1.Location = new Point(557, 309);
@@ -301,7 +301,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
+            label3.BackColor = Color.ForestGreen;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
             label3.Location = new Point(792, 309);
@@ -313,7 +313,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.ForestGreen;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Transparent;
             label4.Location = new Point(1133, 321);
@@ -325,7 +325,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
+            label5.BackColor = Color.ForestGreen;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Transparent;
             label5.Location = new Point(1466, 321);
@@ -338,7 +338,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
+            label6.BackColor = Color.ForestGreen;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonFace;
             label6.Location = new Point(274, 751);
@@ -350,7 +350,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
+            label7.BackColor = Color.ForestGreen;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Transparent;
             label7.Location = new Point(524, 751);
@@ -412,7 +412,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.BackColor = Color.Transparent;
+            label8.BackColor = Color.ForestGreen;
             label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Transparent;
             label8.Location = new Point(886, 751);
@@ -424,7 +424,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
+            label9.BackColor = Color.ForestGreen;
             label9.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.Transparent;
             label9.Location = new Point(1199, 751);
@@ -436,7 +436,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
+            label10.BackColor = Color.ForestGreen;
             label10.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Transparent;
             label10.Location = new Point(1419, 751);
@@ -448,7 +448,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
+            label11.BackColor = Color.ForestGreen;
             label11.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.White;
             label11.Location = new Point(236, 1187);
@@ -460,7 +460,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
+            label12.BackColor = Color.ForestGreen;
             label12.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
             label12.Location = new Point(622, 1187);
@@ -472,7 +472,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.BackColor = Color.Transparent;
+            label13.BackColor = Color.ForestGreen;
             label13.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.White;
             label13.Location = new Point(886, 1187);
@@ -484,7 +484,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
+            label14.BackColor = Color.ForestGreen;
             label14.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
             label14.Location = new Point(1186, 1187);
@@ -496,7 +496,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.BackColor = Color.Transparent;
+            label15.BackColor = Color.ForestGreen;
             label15.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.White;
             label15.Location = new Point(1481, 1187);
@@ -508,7 +508,7 @@
             // label16
             // 
             label16.AutoSize = true;
-            label16.BackColor = Color.Transparent;
+            label16.BackColor = Color.ForestGreen;
             label16.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.ForeColor = SystemColors.ControlLightLight;
             label16.Location = new Point(317, 369);
@@ -520,7 +520,7 @@
             // label17
             // 
             label17.AutoSize = true;
-            label17.BackColor = Color.Transparent;
+            label17.BackColor = Color.ForestGreen;
             label17.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.Transparent;
             label17.Location = new Point(589, 369);
@@ -533,7 +533,7 @@
             // label18
             // 
             label18.AutoSize = true;
-            label18.BackColor = Color.Transparent;
+            label18.BackColor = Color.ForestGreen;
             label18.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label18.ForeColor = Color.Transparent;
             label18.Location = new Point(899, 359);
@@ -545,7 +545,7 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.BackColor = Color.Transparent;
+            label19.BackColor = Color.ForestGreen;
             label19.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label19.ForeColor = Color.Transparent;
             label19.Location = new Point(1199, 359);
@@ -557,7 +557,7 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.BackColor = Color.Transparent;
+            label20.BackColor = Color.ForestGreen;
             label20.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label20.ForeColor = Color.Transparent;
             label20.Location = new Point(1516, 359);
@@ -569,7 +569,7 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.BackColor = Color.Transparent;
+            label21.BackColor = Color.ForestGreen;
             label21.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label21.ForeColor = SystemColors.Control;
             label21.Location = new Point(317, 794);
@@ -581,7 +581,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.BackColor = Color.Transparent;
+            label22.BackColor = Color.ForestGreen;
             label22.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label22.ForeColor = Color.Transparent;
             label22.Location = new Point(613, 794);
@@ -593,7 +593,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.BackColor = Color.Transparent;
+            label23.BackColor = Color.ForestGreen;
             label23.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label23.ForeColor = Color.Transparent;
             label23.Location = new Point(909, 794);
@@ -605,7 +605,7 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.BackColor = Color.Transparent;
+            label24.BackColor = Color.ForestGreen;
             label24.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label24.ForeColor = Color.Transparent;
             label24.Location = new Point(1199, 794);
@@ -617,7 +617,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.BackColor = Color.Transparent;
+            label25.BackColor = Color.ForestGreen;
             label25.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label25.ForeColor = Color.Transparent;
             label25.Location = new Point(1516, 794);
@@ -629,7 +629,7 @@
             // label26
             // 
             label26.AutoSize = true;
-            label26.BackColor = Color.Transparent;
+            label26.BackColor = Color.ForestGreen;
             label26.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label26.ForeColor = Color.White;
             label26.Location = new Point(317, 1222);
@@ -641,7 +641,7 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.BackColor = Color.Transparent;
+            label27.BackColor = Color.ForestGreen;
             label27.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label27.ForeColor = Color.White;
             label27.Location = new Point(1207, 1222);
@@ -653,7 +653,7 @@
             // label28
             // 
             label28.AutoSize = true;
-            label28.BackColor = Color.Transparent;
+            label28.BackColor = Color.ForestGreen;
             label28.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label28.ForeColor = Color.White;
             label28.Location = new Point(622, 1222);
@@ -665,7 +665,7 @@
             // label29
             // 
             label29.AutoSize = true;
-            label29.BackColor = Color.Transparent;
+            label29.BackColor = Color.ForestGreen;
             label29.Font = new Font("Stencil", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label29.ForeColor = Color.White;
             label29.Location = new Point(909, 1222);
@@ -677,7 +677,7 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.BackColor = Color.Transparent;
+            label30.BackColor = Color.ForestGreen;
             label30.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label30.ForeColor = Color.White;
             label30.Location = new Point(1516, 1222);
@@ -690,7 +690,6 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);
