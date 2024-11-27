@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Xbox));
-            pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
             pictureBox6 = new PictureBox();
@@ -80,7 +79,6 @@
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -103,16 +101,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Location = new Point(3, -52);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1802, 1346);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
@@ -121,6 +109,7 @@
             pictureBox2.Location = new Point(557, 95);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(167, 211);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
@@ -183,14 +172,16 @@
             // 
             // pictureBox12
             // 
-            pictureBox12.BackColor = Color.Transparent;
+            pictureBox12.BackColor = Color.ForestGreen;
             pictureBox12.Cursor = Cursors.Hand;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
-            pictureBox12.Location = new Point(269, 95);
+            pictureBox12.Location = new Point(294, 122);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(167, 211);
+            pictureBox12.Size = new Size(166, 196);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 19;
             pictureBox12.TabStop = false;
+            pictureBox12.Click += pictureBox12_Click;
             // 
             // pictureBox3
             // 
@@ -227,11 +218,12 @@
             // 
             pictureBox11.Cursor = Cursors.Hand;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(269, 964);
+            pictureBox11.Location = new Point(258, 964);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(167, 211);
             pictureBox11.TabIndex = 28;
             pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
             // 
             // pictureBox16
             // 
@@ -690,8 +682,8 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1806, 876);
+            BackColor = Color.ForestGreen;
+            ClientSize = new Size(1806, 1102);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -738,7 +730,6 @@
             Controls.Add(pictureBox12);
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
@@ -746,7 +737,6 @@
             Name = "Xbox";
             Text = "Xbox";
             Load += Xbox_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -772,8 +762,6 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel panel1;
         private PictureBox pictureBox7;

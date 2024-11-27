@@ -109,6 +109,7 @@
             pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(167, 209);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
@@ -171,32 +172,38 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(1472, 132);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(167, 209);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
             // 
             // pictureBox5
             // 
+            pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(1177, 132);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(167, 209);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 5;
             pictureBox5.TabStop = false;
             pictureBox5.Click += pictureBox2_Click;
             // 
             // pictureBox6
             // 
+            pictureBox6.BackColor = Color.Transparent;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(591, 132);
             pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(167, 209);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 13;
             pictureBox6.TabStop = false;
             // 
@@ -208,107 +215,128 @@
             pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(167, 209);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 14;
             pictureBox7.TabStop = false;
             // 
             // pictureBox10
             // 
+            pictureBox10.BackColor = Color.Transparent;
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
             pictureBox10.Location = new Point(302, 504);
             pictureBox10.Margin = new Padding(2);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(167, 209);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 15;
             pictureBox10.TabStop = false;
             // 
             // pictureBox11
             // 
+            pictureBox11.BackColor = Color.Transparent;
             pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
-            pictureBox11.Location = new Point(591, 504);
+            pictureBox11.Location = new Point(560, 457);
             pictureBox11.Margin = new Padding(2);
             pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(167, 209);
+            pictureBox11.Size = new Size(270, 256);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox11.TabIndex = 16;
             pictureBox11.TabStop = false;
             // 
             // pictureBox12
             // 
+            pictureBox12.BackColor = Color.Transparent;
             pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
             pictureBox12.Location = new Point(890, 504);
             pictureBox12.Margin = new Padding(2);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(167, 209);
+            pictureBox12.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox12.TabIndex = 17;
             pictureBox12.TabStop = false;
             // 
             // pictureBox14
             // 
+            pictureBox14.BackColor = Color.Transparent;
             pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
-            pictureBox14.Location = new Point(1177, 504);
+            pictureBox14.Location = new Point(1152, 477);
             pictureBox14.Margin = new Padding(2);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(167, 209);
+            pictureBox14.Size = new Size(226, 267);
+            pictureBox14.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox14.TabIndex = 18;
             pictureBox14.TabStop = false;
             // 
             // pictureBox15
             // 
+            pictureBox15.BackColor = Color.Transparent;
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(1472, 504);
+            pictureBox15.Location = new Point(1439, 477);
             pictureBox15.Margin = new Padding(2);
             pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(167, 209);
+            pictureBox15.Size = new Size(221, 267);
+            pictureBox15.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox15.TabIndex = 19;
             pictureBox15.TabStop = false;
             // 
             // pictureBox16
             // 
+            pictureBox16.BackColor = Color.Transparent;
             pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
             pictureBox16.Location = new Point(1472, 916);
             pictureBox16.Margin = new Padding(2);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(167, 209);
+            pictureBox16.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox16.TabIndex = 20;
             pictureBox16.TabStop = false;
             // 
             // pictureBox17
             // 
+            pictureBox17.BackColor = Color.Transparent;
             pictureBox17.Image = (Image)resources.GetObject("pictureBox17.Image");
-            pictureBox17.Location = new Point(890, 916);
+            pictureBox17.Location = new Point(895, 898);
             pictureBox17.Margin = new Padding(2);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(167, 209);
+            pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox17.TabIndex = 21;
             pictureBox17.TabStop = false;
             // 
             // pictureBox18
             // 
+            pictureBox18.BackColor = Color.Transparent;
             pictureBox18.Image = (Image)resources.GetObject("pictureBox18.Image");
             pictureBox18.Location = new Point(1177, 916);
             pictureBox18.Margin = new Padding(2);
             pictureBox18.Name = "pictureBox18";
             pictureBox18.Size = new Size(167, 209);
+            pictureBox18.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox18.TabIndex = 21;
             pictureBox18.TabStop = false;
             // 
             // pictureBox19
             // 
+            pictureBox19.BackColor = Color.Transparent;
             pictureBox19.Image = (Image)resources.GetObject("pictureBox19.Image");
-            pictureBox19.Location = new Point(591, 916);
+            pictureBox19.Location = new Point(560, 898);
             pictureBox19.Margin = new Padding(2);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(167, 209);
+            pictureBox19.Size = new Size(198, 227);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox19.TabIndex = 22;
             pictureBox19.TabStop = false;
             pictureBox19.Click += pictureBox19_Click;
             // 
             // pictureBox20
             // 
+            pictureBox20.BackColor = Color.Transparent;
             pictureBox20.Image = (Image)resources.GetObject("pictureBox20.Image");
             pictureBox20.Location = new Point(302, 916);
             pictureBox20.Margin = new Padding(2);
             pictureBox20.Name = "pictureBox20";
             pictureBox20.Size = new Size(167, 209);
+            pictureBox20.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox20.TabIndex = 23;
             pictureBox20.TabStop = false;
             // 
@@ -649,7 +677,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1806, 876);
+            ClientSize = new Size(1806, 1102);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);

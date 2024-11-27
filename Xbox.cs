@@ -90,5 +90,15 @@ namespace GAMERS
             Ticket carrito = new Ticket();
             carrito.Show();
         }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

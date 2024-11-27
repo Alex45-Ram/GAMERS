@@ -109,6 +109,7 @@
             pictureBox2.Location = new Point(217, 205);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(164, 199);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
@@ -119,6 +120,7 @@
             pictureBox3.Location = new Point(522, 205);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(160, 199);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
@@ -131,6 +133,7 @@
             pictureBox4.Location = new Point(831, 205);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(164, 199);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 6;
             pictureBox4.TabStop = false;
             // 
@@ -139,9 +142,10 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Cursor = Cursors.Hand;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1112, 205);
+            pictureBox5.Location = new Point(1069, 156);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(164, 199);
+            pictureBox5.Size = new Size(245, 308);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 7;
             pictureBox5.TabStop = false;
             // 
@@ -152,6 +156,7 @@
             pictureBox6.Location = new Point(1465, 205);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(164, 199);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 8;
             pictureBox6.TabStop = false;
             // 
@@ -647,7 +652,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.RoyalBlue;
             ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);
