@@ -683,7 +683,7 @@
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
             BackColor = Color.ForestGreen;
-            ClientSize = new Size(1806, 1102);
+            ClientSize = new Size(1806, 876);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
