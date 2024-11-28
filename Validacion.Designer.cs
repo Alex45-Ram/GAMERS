@@ -135,10 +135,12 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 38);
+            pictureBox2.Location = new Point(0, 48);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(268, 191);
+            pictureBox2.Size = new Size(415, 335);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
             // 

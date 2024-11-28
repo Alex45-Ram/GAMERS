@@ -35,10 +35,19 @@
             label2 = new Label();
             pictureBox3 = new PictureBox();
             label1 = new Label();
+            pictureBox4 = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
+            pictureBox5 = new PictureBox();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -79,7 +88,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(537, 54);
+            label2.Location = new Point(608, 77);
             label2.Name = "label2";
             label2.Size = new Size(715, 71);
             label2.TabIndex = 14;
@@ -108,12 +117,103 @@
             label1.TabIndex = 18;
             label1.Text = "Soporte";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(569, 136);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(765, 728);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 19;
+            pictureBox4.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.CalendarFont = new Font("Segoe UI Symbol", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dateTimePicker1.CalendarForeColor = Color.Black;
+            dateTimePicker1.CalendarMonthBackground = Color.Black;
+            dateTimePicker1.CalendarTitleBackColor = Color.Black;
+            dateTimePicker1.CalendarTitleForeColor = Color.Black;
+            dateTimePicker1.CalendarTrailingForeColor = Color.Black;
+            dateTimePicker1.Checked = false;
+            dateTimePicker1.Enabled = false;
+            dateTimePicker1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Location = new Point(0, 830);
+            dateTimePicker1.MaxDate = new DateTime(2024, 12, 6, 0, 0, 0, 0);
+            dateTimePicker1.MinDate = new DateTime(2024, 11, 27, 0, 0, 0, 0);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(408, 38);
+            dateTimePicker1.TabIndex = 20;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(1446, 399);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(312, 272);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 21;
+            pictureBox5.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(1437, 361);
+            label3.Name = "label3";
+            label3.Size = new Size(333, 35);
+            label3.TabIndex = 22;
+            label3.Text = "FELICIDADES GABRIEL";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(1465, 686);
+            label4.Name = "label4";
+            label4.Size = new Size(293, 35);
+            label4.TabIndex = 23;
+            label4.Text = "EMPLEADO DEL MES";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(171, 42);
+            label5.Name = "label5";
+            label5.Size = new Size(117, 35);
+            label5.TabIndex = 25;
+            label5.Text = "AVISOS";
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(12, 80);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(431, 591);
+            panel2.TabIndex = 26;
+            // 
             // Bienvenida
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1802, 876);
+            Controls.Add(panel2);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(pictureBox5);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(pictureBox4);
             Controls.Add(label1);
             Controls.Add(pictureBox3);
             Controls.Add(label2);
@@ -127,6 +227,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -139,5 +241,12 @@
         private Label label2;
         private PictureBox pictureBox3;
         private Label label1;
+        private PictureBox pictureBox4;
+        private DateTimePicker dateTimePicker1;
+        private PictureBox pictureBox5;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Panel panel2;
     }
 }
