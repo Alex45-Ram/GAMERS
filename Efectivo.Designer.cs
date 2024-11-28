@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Efectivo));
-            pictureBox1 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
@@ -43,66 +42,59 @@
             textBox3 = new TextBox();
             label6 = new Label();
             label7 = new Label();
+            panel2 = new Panel();
+            pictureBox4 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.ControlDarkDark;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-4, -8);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1979, 991);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
-            pictureBox1.Tag = "";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Black;
-            label2.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.Control;
-            label2.Location = new Point(605, 9);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Tahoma", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ActiveCaptionText;
+            label2.Location = new Point(597, 58);
             label2.Name = "label2";
-            label2.Size = new Size(755, 71);
+            label2.Size = new Size(768, 72);
             label2.TabIndex = 19;
             label2.Text = "MEDIO DE PAGO EFECTIVO";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.Black;
-            label3.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Control;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Tahoma", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Location = new Point(446, 189);
             label3.Name = "label3";
-            label3.Size = new Size(274, 33);
+            label3.Size = new Size(280, 34);
             label3.TabIndex = 20;
             label3.Text = "TOTAL DE LA DEUDA";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Black;
-            label1.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.Control;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Tahoma", 16.2F);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
             label1.Location = new Point(446, 307);
             label1.Name = "label1";
-            label1.Size = new Size(332, 33);
+            label1.Size = new Size(339, 34);
             label1.TabIndex = 21;
             label1.Text = "CANTIDAD DE EFECTIVO:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Black;
-            label4.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.Control;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Tahoma", 16.2F);
+            label4.ForeColor = SystemColors.ActiveCaptionText;
             label4.Location = new Point(446, 601);
             label4.Name = "label4";
-            label4.Size = new Size(127, 33);
+            label4.Size = new Size(128, 34);
             label4.TabIndex = 22;
             label4.Text = "CAMBIO:";
             // 
@@ -154,32 +146,64 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.Black;
-            label6.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.Control;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Tahoma", 16.2F);
+            label6.ForeColor = SystemColors.ActiveCaptionText;
             label6.Location = new Point(735, 422);
             label6.Name = "label6";
-            label6.Size = new Size(332, 33);
+            label6.Size = new Size(339, 34);
             label6.TabIndex = 28;
             label6.Text = "CANTIDAD DE EFECTIVO:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.BackColor = Color.Black;
-            label7.Font = new Font("Stencil", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = SystemColors.Control;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Sylfaen", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ActiveCaptionText;
             label7.Location = new Point(661, 744);
             label7.Name = "label7";
-            label7.Size = new Size(632, 33);
+            label7.Size = new Size(639, 36);
             label7.TabIndex = 29;
             label7.Text = "GRACIAS POR PREFERIRNOS, VUELVA PRONTO.";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.PowderBlue;
+            panel2.Controls.Add(pictureBox4);
+            panel2.Location = new Point(-4, 1);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1845, 39);
+            panel2.TabIndex = 32;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Cursor = Cursors.Hand;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(24, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(40, 35);
+            pictureBox4.TabIndex = 1;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(906, 545);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(223, 152);
+            pictureBox1.TabIndex = 33;
+            pictureBox1.TabStop = false;
             // 
             // Efectivo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SeaGreen;
             ClientSize = new Size(1802, 876);
+            Controls.Add(pictureBox1);
+            Controls.Add(panel2);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(textBox3);
@@ -191,17 +215,18 @@
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Efectivo";
             Text = "Efectivo";
+            Load += Efectivo_Load;
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label label2;
         private Label label3;
         private Label label1;
@@ -214,5 +239,8 @@
         private TextBox textBox3;
         private Label label6;
         private Label label7;
+        private Panel panel2;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox1;
     }
 }

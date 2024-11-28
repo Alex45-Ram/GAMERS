@@ -16,5 +16,12 @@ namespace GAMERS
         {
             InitializeComponent();
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Validacion nF = new Validacion();
+            nF.Show();
+            this.Hide();
+        }
     }
 }
