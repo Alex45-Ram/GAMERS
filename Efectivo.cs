@@ -21,5 +21,17 @@ namespace GAMERS
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Ticket nF = new Ticket();
+            nF.Show();
+            this.Hide();
+        }
+
+        private void Efectivo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
