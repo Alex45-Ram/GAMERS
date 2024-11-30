@@ -41,7 +41,12 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            panel2 = new Panel();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -150,9 +155,9 @@
             // 
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(1446, 399);
+            pictureBox5.Location = new Point(1550, 450);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(312, 272);
+            pictureBox5.Size = new Size(207, 202);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 21;
             pictureBox5.TabStop = false;
@@ -162,8 +167,8 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Control;
-            label3.Location = new Point(1437, 361);
+            label3.ForeColor = Color.FromArgb(192, 192, 0);
+            label3.Location = new Point(1467, 412);
             label3.Name = "label3";
             label3.Size = new Size(333, 35);
             label3.TabIndex = 22;
@@ -174,8 +179,8 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(1465, 686);
+            label4.ForeColor = Color.FromArgb(192, 192, 0);
+            label4.Location = new Point(1507, 674);
             label4.Name = "label4";
             label4.Size = new Size(293, 35);
             label4.TabIndex = 23;
@@ -194,12 +199,65 @@
             label5.TabIndex = 25;
             label5.Text = "AVISOS";
             // 
-            // panel2
+            // label6
             // 
-            panel2.Location = new Point(12, 80);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(431, 591);
-            panel2.TabIndex = 26;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(184, 108);
+            label6.Name = "label6";
+            label6.Size = new Size(83, 28);
+            label6.TabIndex = 26;
+            label6.Text = "AVISO 1";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(184, 179);
+            label7.Name = "label7";
+            label7.Size = new Size(83, 28);
+            label7.TabIndex = 27;
+            label7.Text = "AVISO 1";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(184, 253);
+            label8.Name = "label8";
+            label8.Size = new Size(83, 28);
+            label8.TabIndex = 28;
+            label8.Text = "AVISO 1";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(184, 334);
+            label9.Name = "label9";
+            label9.Size = new Size(83, 28);
+            label9.TabIndex = 29;
+            label9.Text = "AVISO 1";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.Location = new Point(184, 419);
+            label10.Name = "label10";
+            label10.Size = new Size(83, 28);
+            label10.TabIndex = 30;
+            label10.Text = "AVISO 1";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(12, 489);
+            label11.Name = "label11";
+            label11.Size = new Size(510, 28);
+            label11.TabIndex = 31;
+            label11.Text = "QUE ALGUNO SE DIGNE A LLENAR LOS AVISOS, PUTAS";
             // 
             // Bienvenida
             // 
@@ -207,7 +265,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1802, 876);
-            Controls.Add(panel2);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -247,6 +310,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Panel panel2;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
     }
 }

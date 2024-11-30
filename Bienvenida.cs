@@ -27,6 +27,7 @@ namespace GAMERS
             Validacion nuevoForm = new Validacion();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)

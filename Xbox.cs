@@ -24,6 +24,7 @@ namespace GAMERS
             menu nuevoForm = new menu();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,6 +57,7 @@ namespace GAMERS
             menu nF = new menu();
             nF.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -63,6 +65,7 @@ namespace GAMERS
             Bienvenida nF = new Bienvenida();
             nF.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -89,6 +92,7 @@ namespace GAMERS
         {
             Ticket carrito = new Ticket();
             carrito.Show();
+            this.Close();
         }
 
         private void pictureBox12_Click(object sender, EventArgs e)

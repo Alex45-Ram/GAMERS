@@ -35,7 +35,6 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -79,13 +78,13 @@
             label17 = new Label();
             label2 = new Label();
             label16 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -99,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -163,35 +163,22 @@
             // panel1
             // 
             panel1.BackColor = Color.PowderBlue;
-            panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(pictureBox7);
             panel1.ForeColor = Color.LightBlue;
             panel1.Location = new Point(0, 1);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1790, 39);
+            panel1.Size = new Size(1788, 39);
             panel1.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Cursor = Cursors.Hand;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1658, 1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(49, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 74;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox9
             // 
             pictureBox9.Cursor = Cursors.Hand;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(1747, 1);
+            pictureBox9.Location = new Point(1735, 1);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(40, 35);
+            pictureBox9.Size = new Size(39, 35);
             pictureBox9.TabIndex = 12;
             pictureBox9.TabStop = false;
             pictureBox9.Click += pictureBox9_Click;
@@ -648,12 +635,24 @@
             label16.TabIndex = 35;
             label16.Text = "$$$$\r\n";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 1153);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(116, 106);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 50;
+            pictureBox1.TabStop = false;
+            // 
             // Play
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
             BackColor = Color.RoyalBlue;
             ClientSize = new Size(1806, 876);
+            Controls.Add(pictureBox1);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -714,7 +713,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -728,6 +726,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

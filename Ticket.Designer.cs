@@ -30,7 +30,6 @@ namespace GAMERS
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ticket));
-            pictureBox2 = new PictureBox();
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
@@ -38,22 +37,16 @@ namespace GAMERS
             button1 = new Button();
             button2 = new Button();
             panel2 = new Panel();
+            pictureBox9 = new PictureBox();
+            pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            pictureBox2 = new PictureBox();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 51);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(268, 203);
-            pictureBox2.TabIndex = 16;
-            pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -111,6 +104,7 @@ namespace GAMERS
             button1.TabIndex = 21;
             button1.Text = "EFECTIVO";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -121,44 +115,70 @@ namespace GAMERS
             button2.TabIndex = 22;
             button2.Text = "TARJETA";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // panel2
             // 
             panel2.BackColor = Color.PowderBlue;
+            panel2.Controls.Add(pictureBox9);
+            panel2.Controls.Add(pictureBox3);
             panel2.Controls.Add(pictureBox4);
             panel2.Location = new Point(3, 6);
             panel2.Name = "panel2";
             panel2.Size = new Size(1845, 39);
             panel2.TabIndex = 24;
             // 
+            // pictureBox9
+            // 
+            pictureBox9.Cursor = Cursors.Hand;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(63, 1);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(40, 35);
+            pictureBox9.TabIndex = 76;
+            pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Cursor = Cursors.Hand;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(1758, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(40, 35);
+            pictureBox3.TabIndex = 25;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
             // pictureBox4
             // 
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(24, 3);
+            pictureBox4.Location = new Point(3, 3);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(40, 35);
             pictureBox4.TabIndex = 1;
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            pictureBox1.BackColor = SystemColors.ControlDarkDark;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-88, -57);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1979, 991);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 13;
-            pictureBox1.TabStop = false;
-            pictureBox1.Tag = "";
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(3, 771);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(116, 106);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
             // 
             // Ticket
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1802, 876);
+            Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -166,15 +186,15 @@ namespace GAMERS
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Ticket";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,7 +215,6 @@ namespace GAMERS
         }
 
 #endregion
-        private PictureBox pictureBox2;
         private Label label2;
         private Label label3;
         private Label label1;
@@ -204,6 +223,8 @@ namespace GAMERS
         private Button button2;
         private Panel panel2;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox2;
     }
 }

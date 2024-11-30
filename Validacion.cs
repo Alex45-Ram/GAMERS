@@ -147,14 +147,16 @@ namespace GAMERS
                 menu nuevoForm = new menu();
                 nuevoForm.Show();
                 this.Hide();
+                this.Close();
             }
 
             else if (emp == 1 && contraseñaIngresada == contraseñajefe)
             {
 
-                Admin nuevoForm = new Admin();
+                Test nuevoForm = new Test();
                 nuevoForm.Show();
                 this.Hide();
+                this.Close();
             }
             else
             {

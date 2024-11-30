@@ -41,15 +41,21 @@
             button1 = new Button();
             label7 = new Label();
             panel2 = new Panel();
+            pictureBox9 = new PictureBox();
+            pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            pictureBox6 = new PictureBox();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -165,17 +171,41 @@
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(20, 84, 156);
+            panel2.Controls.Add(pictureBox9);
+            panel2.Controls.Add(pictureBox5);
             panel2.Controls.Add(pictureBox4);
             panel2.Location = new Point(0, -5);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1866, 54);
+            panel2.Size = new Size(1845, 39);
             panel2.TabIndex = 31;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Cursor = Cursors.Hand;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(67, 4);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(40, 35);
+            pictureBox9.TabIndex = 76;
+            pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Cursor = Cursors.Hand;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(1760, 4);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(40, 35);
+            pictureBox5.TabIndex = 21;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox4
             // 
             pictureBox4.Cursor = Cursors.Hand;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(26, 16);
+            pictureBox4.Location = new Point(3, 4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(40, 35);
             pictureBox4.TabIndex = 1;
@@ -222,12 +252,24 @@
             pictureBox3.TabIndex = 34;
             pictureBox3.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(0, 776);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(116, 106);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 35;
+            pictureBox6.TabStop = false;
+            // 
             // Tarjeta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1802, 876);
+            Controls.Add(pictureBox6);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -245,13 +287,17 @@
             Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Tarjeta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tarjeta";
             Load += Tarjeta_Load;
             panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -273,5 +319,8 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox6;
     }
 }

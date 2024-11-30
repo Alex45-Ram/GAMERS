@@ -33,5 +33,18 @@ namespace GAMERS
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Bienvenida nF = new Bienvenida();
+            nF.Show();
+            this.Hide();
+            this.Close();
+        }
     }
 }
