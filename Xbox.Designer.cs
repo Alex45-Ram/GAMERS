@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Xbox));
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
-            pictureBox6 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -79,9 +78,9 @@
             label28 = new Label();
             label29 = new Label();
             label30 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -99,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -116,26 +116,13 @@
             // panel1
             // 
             panel1.BackColor = Color.PowderBlue;
-            panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(pictureBox7);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1805, 39);
+            panel1.Size = new Size(1787, 39);
             panel1.TabIndex = 8;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Cursor = Cursors.Hand;
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(1661, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(49, 35);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 73;
-            pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click_1;
             // 
             // pictureBox9
             // 
@@ -152,7 +139,7 @@
             // 
             pictureBox8.Cursor = Cursors.Hand;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(1744, 1);
+            pictureBox8.Location = new Point(1744, 0);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(40, 35);
             pictureBox8.TabIndex = 10;
@@ -678,12 +665,24 @@
             label30.TabIndex = 72;
             label30.Text = "$$$$";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 1141);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(116, 106);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 73;
+            pictureBox1.TabStop = false;
+            // 
             // Xbox
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoScroll = true;
             BackColor = Color.ForestGreen;
             ClientSize = new Size(1806, 876);
+            Controls.Add(pictureBox1);
             Controls.Add(label30);
             Controls.Add(label29);
             Controls.Add(label28);
@@ -739,7 +738,6 @@
             Load += Xbox_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -757,6 +755,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -812,6 +811,6 @@
         private Label label28;
         private Label label29;
         private Label label30;
-        private PictureBox pictureBox6;
+        private PictureBox pictureBox1;
     }
 }

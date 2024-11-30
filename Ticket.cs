@@ -19,9 +19,39 @@ namespace GAMERS
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Validacion nF = new Validacion();
+            menu nF = new menu();
             nF.Show();
             this.Hide();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Tarjeta nF = new Tarjeta();
+            nF.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Efectivo nF = new Efectivo();
+            nF.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Bienvenida nF = new Bienvenida();
+            nF.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

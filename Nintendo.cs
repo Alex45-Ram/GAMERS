@@ -44,6 +44,7 @@ namespace GAMERS
         {
             Bienvenida nF = new Bienvenida();
             nF.Show();
+            this.Close();
             this.Hide();
         }
 
@@ -52,12 +53,14 @@ namespace GAMERS
             menu nF = new menu();
             nF.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             Ticket carrito = new Ticket();
             carrito.Show();
+            this.Close();
         }
     }
 }

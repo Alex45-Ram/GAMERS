@@ -102,11 +102,32 @@ namespace GAMERS
             textBox5.Clear();
             textBox6.Clear();
         }
-    
+
 
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Bienvenida F = new Bienvenida();
+            F.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Admin F = new Admin();
+            F.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

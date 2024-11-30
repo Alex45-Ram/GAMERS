@@ -65,7 +65,53 @@ namespace GAMERS
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Validacion nF = new Validacion();
+            nF.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Bienvenida F = new Bienvenida();
+            F.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            uevo_Usuario nuevoForm = new uevo_Usuario();
+            nuevoForm.Show();
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            Eliminar_Usuario F = new Eliminar_Usuario();
+            F.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Eliminar_Usuario F = new Eliminar_Usuario();
+            F.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Eliminar_Usuario F = new Eliminar_Usuario();
+            F.Show();
+            this.Hide();
+            this.Close();
         }
     }
 }

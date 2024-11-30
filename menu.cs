@@ -28,6 +28,7 @@ namespace GAMERS
             Play nuevoForm = new Play();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace GAMERS
             Xbox nuevoForm = new Xbox();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,6 +54,7 @@ namespace GAMERS
             Nintendo nuevoForm = new Nintendo();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -59,6 +62,7 @@ namespace GAMERS
             Accesorios nuevoForm = new Accesorios();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -66,6 +70,7 @@ namespace GAMERS
             Accesorios nuevoForm = new Accesorios();
             nuevoForm.Show();
             this.Hide();
+            this.Close();
         }
 
         private void menu_Load(object sender, EventArgs e)
@@ -92,6 +97,7 @@ namespace GAMERS
             Validacion nF = new Validacion();
             nF.Show();
             this.Hide();
+            this.Close();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -103,6 +109,7 @@ namespace GAMERS
         {
             Ticket carrito = new Ticket();
             carrito.Show();
+            this.Close();
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -110,6 +117,7 @@ namespace GAMERS
             Bienvenida nF = new Bienvenida();
             nF.Show();
             this.Hide();
+            this.Close();
         }
     }
 }
