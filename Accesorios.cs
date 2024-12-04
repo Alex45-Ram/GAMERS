@@ -43,7 +43,7 @@ namespace GAMERS
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            GestorProductos.AgregarProducto("Mouse Razer");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -74,7 +74,7 @@ namespace GAMERS
 
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-
+            GestorProductos.AgregarProducto("Teclado Mecanico");
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
@@ -82,6 +82,73 @@ namespace GAMERS
             Ticket carrito = new Ticket();
             carrito.Show();
             this.Close();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            Ticket carrito = new Ticket();
+            carrito.Show();
+            this.Close();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mouse Logitech");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mouse HyperX");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Audifonos HyperX");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Audifonos Sony");
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mouse Pad");
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Volante y Pedales");
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Gafas VR");
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Stream Deck");
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Memoria RAM 16gb");
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Parlamtes Genius");
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Webcam Zilink");
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("GeoForce RTX ");
         }
     }
 }
