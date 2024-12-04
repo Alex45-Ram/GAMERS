@@ -24,6 +24,7 @@ namespace GAMERS
 
         public void AgregarProducto(Producto producto)
         {
+            productos.Add(producto);
             CarritoCompartido.Productos.Add(producto);
             ActualizarVista();
             
