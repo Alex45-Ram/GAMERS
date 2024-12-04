@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Xbox));
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
+            pictureBox6 = new PictureBox();
             pictureBox9 = new PictureBox();
             pictureBox8 = new PictureBox();
             pictureBox7 = new PictureBox();
@@ -81,6 +82,7 @@
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -112,10 +114,12 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // panel1
             // 
             panel1.BackColor = Color.PowderBlue;
+            panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox8);
             panel1.Controls.Add(pictureBox7);
@@ -123,6 +127,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1787, 39);
             panel1.TabIndex = 8;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Cursor = Cursors.Hand;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(1658, 1);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(49, 35);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 75;
+            pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click_2;
             // 
             // pictureBox9
             // 
@@ -179,6 +195,7 @@
             pictureBox3.Size = new Size(167, 211);
             pictureBox3.TabIndex = 20;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click_1;
             // 
             // pictureBox4
             // 
@@ -189,6 +206,7 @@
             pictureBox4.Size = new Size(167, 211);
             pictureBox4.TabIndex = 21;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
@@ -200,6 +218,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 22;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox11
             // 
@@ -221,6 +240,7 @@
             pictureBox16.Size = new Size(167, 211);
             pictureBox16.TabIndex = 29;
             pictureBox16.TabStop = false;
+            pictureBox16.Click += pictureBox16_Click;
             // 
             // pictureBox17
             // 
@@ -231,6 +251,7 @@
             pictureBox17.Size = new Size(167, 211);
             pictureBox17.TabIndex = 30;
             pictureBox17.TabStop = false;
+            pictureBox17.Click += pictureBox17_Click;
             // 
             // pictureBox18
             // 
@@ -241,6 +262,7 @@
             pictureBox18.Size = new Size(167, 211);
             pictureBox18.TabIndex = 31;
             pictureBox18.TabStop = false;
+            pictureBox18.Click += pictureBox18_Click;
             // 
             // pictureBox19
             // 
@@ -251,6 +273,7 @@
             pictureBox19.Size = new Size(167, 211);
             pictureBox19.TabIndex = 32;
             pictureBox19.TabStop = false;
+            pictureBox19.Click += pictureBox19_Click;
             // 
             // label2
             // 
@@ -274,7 +297,7 @@
             label1.Name = "label1";
             label1.Size = new Size(119, 50);
             label1.TabIndex = 35;
-            label1.Text = "Xbox Series S\r\n     $7000\r\n";
+            label1.Text = "Xbox Series S\r\n    ";
             label1.Click += label1_Click_1;
             // 
             // label3
@@ -347,6 +370,7 @@
             pictureBox20.Size = new Size(167, 211);
             pictureBox20.TabIndex = 46;
             pictureBox20.TabStop = false;
+            pictureBox20.Click += pictureBox20_Click;
             // 
             // pictureBox21
             // 
@@ -357,6 +381,7 @@
             pictureBox21.Size = new Size(167, 211);
             pictureBox21.TabIndex = 47;
             pictureBox21.TabStop = false;
+            pictureBox21.Click += pictureBox21_Click;
             // 
             // pictureBox22
             // 
@@ -367,6 +392,7 @@
             pictureBox22.Size = new Size(167, 211);
             pictureBox22.TabIndex = 48;
             pictureBox22.TabStop = false;
+            pictureBox22.Click += pictureBox22_Click;
             // 
             // pictureBox23
             // 
@@ -377,6 +403,7 @@
             pictureBox23.Size = new Size(167, 211);
             pictureBox23.TabIndex = 49;
             pictureBox23.TabStop = false;
+            pictureBox23.Click += pictureBox23_Click;
             // 
             // pictureBox24
             // 
@@ -387,6 +414,7 @@
             pictureBox24.Size = new Size(167, 211);
             pictureBox24.TabIndex = 50;
             pictureBox24.TabStop = false;
+            pictureBox24.Click += pictureBox24_Click;
             // 
             // label8
             // 
@@ -738,6 +766,7 @@
             Load += Xbox_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -812,5 +841,6 @@
         private Label label29;
         private Label label30;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox6;
     }
 }

@@ -62,5 +62,80 @@ namespace GAMERS
             carrito.Show();
             this.Close();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Nintendo Switch");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Nintendo Lite");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Nintendo Switch Oled");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Joysticks Nintendo");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Accesorios");
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mario and Luigi Brothership");
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mario Party");
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Luigi Mansion 2");
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Mario vs Donkey Kong");
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Metroid Prime");
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Splantoon 3");
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Pokemon Scarlet");
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Kirby 20th Anniversary");
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Nintendo Sports");
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            GestorProductos.AgregarProducto("Bayoneta 3");
+        }
     }
 }

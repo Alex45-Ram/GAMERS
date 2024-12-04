@@ -41,11 +41,15 @@ namespace GAMERS
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox2 = new PictureBox();
+            dataGridView1 = new DataGridView();
+            label5 = new Label();
+            labeltotal = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -172,12 +176,48 @@ namespace GAMERS
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.Black;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(719, 185);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(342, 188);
+            dataGridView1.TabIndex = 26;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Black;
+            label5.Font = new Font("Stencil", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(628, 451);
+            label5.Name = "label5";
+            label5.Size = new Size(114, 33);
+            label5.TabIndex = 27;
+            label5.Text = "Total:";
+            // 
+            // labeltotal
+            // 
+            labeltotal.AutoSize = true;
+            labeltotal.BackColor = Color.Black;
+            labeltotal.Font = new Font("Stencil", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labeltotal.ForeColor = Color.White;
+            labeltotal.Location = new Point(948, 457);
+            labeltotal.Name = "labeltotal";
+            labeltotal.Size = new Size(0, 27);
+            labeltotal.TabIndex = 28;
+            // 
             // Ticket
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1802, 876);
+            Controls.Add(labeltotal);
+            Controls.Add(label5);
+            Controls.Add(dataGridView1);
             Controls.Add(pictureBox2);
             Controls.Add(panel2);
             Controls.Add(button2);
@@ -190,11 +230,13 @@ namespace GAMERS
             Name = "Ticket";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
+            Load += Ticket_Load;
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -226,5 +268,8 @@ namespace GAMERS
         private PictureBox pictureBox3;
         private PictureBox pictureBox9;
         private PictureBox pictureBox2;
+        private DataGridView dataGridView1;
+        private Label label5;
+        private Label labeltotal;
     }
 }
