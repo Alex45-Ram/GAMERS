@@ -34,10 +34,10 @@
             label1 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            textBoxNumeroTarjeta = new TextBox();
+            textBoxTitular = new TextBox();
+            textBoxFechaVencimiento = new TextBox();
+            textBoxCVV = new TextBox();
             button1 = new Button();
             label7 = new Label();
             panel2 = new Panel();
@@ -119,33 +119,33 @@
             label5.TabIndex = 22;
             label5.Text = "CVV";
             // 
-            // textBox1
+            // textBoxNumeroTarjeta
             // 
-            textBox1.Location = new Point(558, 198);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(274, 27);
-            textBox1.TabIndex = 23;
+            textBoxNumeroTarjeta.Location = new Point(558, 198);
+            textBoxNumeroTarjeta.Name = "textBoxNumeroTarjeta";
+            textBoxNumeroTarjeta.Size = new Size(274, 27);
+            textBoxNumeroTarjeta.TabIndex = 23;
             // 
-            // textBox2
+            // textBoxTitular
             // 
-            textBox2.Location = new Point(558, 292);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(274, 27);
-            textBox2.TabIndex = 24;
+            textBoxTitular.Location = new Point(558, 292);
+            textBoxTitular.Name = "textBoxTitular";
+            textBoxTitular.Size = new Size(274, 27);
+            textBoxTitular.TabIndex = 24;
             // 
-            // textBox3
+            // textBoxFechaVencimiento
             // 
-            textBox3.Location = new Point(558, 373);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(109, 27);
-            textBox3.TabIndex = 25;
+            textBoxFechaVencimiento.Location = new Point(558, 373);
+            textBoxFechaVencimiento.Name = "textBoxFechaVencimiento";
+            textBoxFechaVencimiento.Size = new Size(109, 27);
+            textBoxFechaVencimiento.TabIndex = 25;
             // 
-            // textBox4
+            // textBoxCVV
             // 
-            textBox4.Location = new Point(351, 447);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(130, 27);
-            textBox4.TabIndex = 26;
+            textBoxCVV.Location = new Point(351, 447);
+            textBoxCVV.Name = "textBoxCVV";
+            textBoxCVV.Size = new Size(130, 27);
+            textBoxCVV.TabIndex = 26;
             // 
             // button1
             // 
@@ -155,6 +155,7 @@
             button1.TabIndex = 27;
             button1.Text = "PAGAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label7
             // 
@@ -276,10 +277,10 @@
             Controls.Add(panel2);
             Controls.Add(label7);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxCVV);
+            Controls.Add(textBoxFechaVencimiento);
+            Controls.Add(textBoxTitular);
+            Controls.Add(textBoxNumeroTarjeta);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label1);
@@ -308,10 +309,10 @@
         private Label label1;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox textBoxNumeroTarjeta;
+        private TextBox textBoxTitular;
+        private TextBox textBoxFechaVencimiento;
+        private TextBox textBoxCVV;
         private Button button1;
         private Label label7;
         private Panel panel2;

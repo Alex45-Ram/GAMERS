@@ -37,9 +37,7 @@
             button1 = new Button();
             imageList1 = new ImageList(components);
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textBoxEfectivo = new TextBox();
             label6 = new Label();
             label7 = new Label();
             panel2 = new Panel();
@@ -48,6 +46,8 @@
             pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            labelTotal = new Label();
+            labelCambio = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -112,6 +112,7 @@
             button1.TabIndex = 23;
             button1.Text = "PAGAR";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // imageList1
             // 
@@ -128,26 +129,13 @@
             label5.TabIndex = 24;
             label5.Click += label5_Click;
             // 
-            // textBox1
+            // textBoxEfectivo
             // 
-            textBox1.Location = new Point(745, 191);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 27);
-            textBox1.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(821, 313);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(240, 27);
-            textBox2.TabIndex = 26;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(637, 601);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(240, 27);
-            textBox3.TabIndex = 27;
+            textBoxEfectivo.Location = new Point(821, 313);
+            textBoxEfectivo.Name = "textBoxEfectivo";
+            textBoxEfectivo.Size = new Size(240, 27);
+            textBoxEfectivo.TabIndex = 26;
+            textBoxEfectivo.TextChanged += textBoxEfectivo_TextChanged;
             // 
             // label6
             // 
@@ -220,7 +208,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(906, 545);
+            pictureBox1.Location = new Point(851, 536);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(223, 152);
             pictureBox1.TabIndex = 33;
@@ -237,20 +225,41 @@
             pictureBox2.TabIndex = 34;
             pictureBox2.TabStop = false;
             // 
+            // labelTotal
+            // 
+            labelTotal.AutoSize = true;
+            labelTotal.BorderStyle = BorderStyle.FixedSingle;
+            labelTotal.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelTotal.Location = new Point(749, 186);
+            labelTotal.Name = "labelTotal";
+            labelTotal.Size = new Size(2, 37);
+            labelTotal.TabIndex = 35;
+            labelTotal.Click += label8_Click;
+            // 
+            // labelCambio
+            // 
+            labelCambio.AutoSize = true;
+            labelCambio.BorderStyle = BorderStyle.FixedSingle;
+            labelCambio.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelCambio.Location = new Point(597, 601);
+            labelCambio.Name = "labelCambio";
+            labelCambio.Size = new Size(2, 37);
+            labelCambio.TabIndex = 36;
+            // 
             // Efectivo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaGreen;
             ClientSize = new Size(1802, 876);
+            Controls.Add(labelCambio);
+            Controls.Add(labelTotal);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textBoxEfectivo);
             Controls.Add(label5);
             Controls.Add(button1);
             Controls.Add(label4);
@@ -280,9 +289,7 @@
         private Button button1;
         private ImageList imageList1;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBoxEfectivo;
         private Label label6;
         private Label label7;
         private Panel panel2;
@@ -291,5 +298,7 @@
         private PictureBox pictureBox9;
         private PictureBox pictureBox5;
         private PictureBox pictureBox2;
+        private Label labelTotal;
+        private Label labelCambio;
     }
 }
