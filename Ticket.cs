@@ -24,20 +24,23 @@ namespace GAMERS
 
         public void AgregarProducto(Producto producto)
         {
-            productos.Add(producto);
-            CarritoCompartido.Productos.Add(producto);
+            if (!CarritoCompartido.Productos.Any(p => p.Nombre == producto.Nombre))
+            {
+                productos.Add(producto);
+                CarritoCompartido.Productos.Add(producto);
+            }
             ActualizarVista();
-            
+
         }
 
 
         private void ActualizarVista()
         {
-          
+
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = productos;
 
-           
+
             int total = productos.Sum(p => p.Precio);
             labeltotal.Text = $"Total: ${total}";
         }
@@ -48,7 +51,7 @@ namespace GAMERS
             menu nF = new menu();
             nF.Show();
             this.Hide();
-            this.Close();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -61,10 +64,11 @@ namespace GAMERS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Efectivo nF = new Efectivo();
+            int total = productos.Sum(p => p.Precio); // Calcula el total a pagar
+            Efectivo nF = new Efectivo(total);
             nF.Show();
             this.Hide();
-            this.Close();
+
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -82,12 +86,20 @@ namespace GAMERS
 
         private void Ticket_Load(object sender, EventArgs e)
         {
+            productos = CarritoCompartido.Productos.ToList();
             ActualizarVista();
         }
         public static class CarritoCompartido
         {
             public static List<Producto> Productos { get; set; } = new List<Producto>();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        
     }
 
 

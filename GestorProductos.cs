@@ -12,8 +12,9 @@ namespace GAMERS
     {
 
             private static Ticket carrito = null;
+        private static List<Producto> productosSeleccionados = new List<Producto>();
 
-            private static void AbrirCarrito()
+        private static void AbrirCarrito()
             {
                 if (carrito == null || carrito.IsDisposed)
                 {
@@ -26,7 +27,7 @@ namespace GAMERS
             public static int ObtenerPrecioDesdeBaseDeDatos(string nombreProducto)
             {
                 int precio = 0;
-                string cadenaConexion = "server=localhost; database=productos; Uid=root; pwd=MayaCity_23";
+                string cadenaConexion = "server=localhost; database=productos; Uid=root; pwd=AngelmartiN2";
 
                 using (MySqlConnection conn = new MySqlConnection(cadenaConexion))
                 {
@@ -59,11 +60,12 @@ namespace GAMERS
                 {
                     int precio = ObtenerPrecioDesdeBaseDeDatos(nombreProducto);
                  Producto producto = new Producto(nombreProducto, precio);
+               
+                  productosSeleccionados.Add(producto);
+                AbrirCarrito();
+                carrito.AgregarProducto(producto);
 
-                    AbrirCarrito();
-                    carrito.AgregarProducto(producto);
-
-                    MessageBox.Show($"Producto agregado al carrito:\nNombre: {nombreProducto}\nPrecio: {precio}", "Producto Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   MessageBox.Show($"Producto agregado al carrito:\nNombre: {nombreProducto}\nPrecio: {precio}", "Producto Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {

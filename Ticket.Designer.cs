@@ -185,6 +185,7 @@ namespace GAMERS
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(342, 188);
             dataGridView1.TabIndex = 26;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label5
             // 
