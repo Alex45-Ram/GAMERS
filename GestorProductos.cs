@@ -27,7 +27,7 @@ namespace GAMERS
             public static int ObtenerPrecioDesdeBaseDeDatos(string nombreProducto)
             {
                 int precio = 0;
-                string cadenaConexion = "server=localhost; database=productos; Uid=root; pwd=AngelmartiN2";
+                string cadenaConexion = "server=localhost; database=losputos; Uid=root; pwd=root";
 
                 using (MySqlConnection conn = new MySqlConnection(cadenaConexion))
                 {

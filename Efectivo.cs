@@ -33,7 +33,7 @@ namespace GAMERS
 
         private void Efectivo_Load(object sender, EventArgs e)
         {
-            labelTotal.Text = $"Cambio: ${total}";
+            labelTotal.Text = $": ${total}";
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
